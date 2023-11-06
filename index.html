@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="night">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadith Generator</title>
+    <link rel="shortcut icon" href="images/JavaScript-logo.png" type="image/x-icon">
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+<!-- navbar -->
+<div class="navbar " style="background: rgb(20,20,20);
+background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(57,27,121,1) 53%, rgba(45,0,107,1) 100%);
+">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2  rounded-box w-52" style="background: rgb(20,20,20);
+        background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(142,138,150,1) 53%, rgba(45,0,107,1) 100%);">
+          <li><a>Homepage</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar-center">
+      <a class="btn btn-ghost normal-case text-xl">Hadith Generator</a>
+    </div>
+    <div class="navbar-end">
+      <button class="btn btn-ghost btn-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+      </button>
+      <button class="btn btn-ghost btn-circle">
+        <div class="indicator">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+          <span class="badge badge-xs badge-primary indicator-item"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+  <!-- navbar -->
+
+
+  <!-- hadith -->
+
+  <div class="flex items-center justify-center mt-14">
+    
+      <!-- Card content goes here -->
+      <div class="card card-compact w-80  shadow-xl bg-slate-800" >
+        <div class="card-body">
+          <h2 class="card-title" id="head">Hadith</h2>
+          <p id="name" class="text-emerald-300">Reference Book/Ayat</p>
+          <div class="card-actions justify-end">
+            <button class="btn border-0 " id="btn" style="background: rgb(23,0,54);
+            background: linear-gradient(90deg, rgba(23,0,54,1) 0%, rgba(73,0,147,1) 48%, rgba(0,21,134,1) 100%);">Generate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- hadith -->
+
+
+
+
+  <!-- tosbi -->
+  
+  <div class=" flex flex-col  items-center justify-center mt-14 text-3xl ">
+  <h1 id="mainText" class="underline decoration-pink-500" >তসবী</h1>
+<h1 id="num0" class="text-6xl">0</h1>
+  </div>
+  
+  <div class=" flex  items-center justify-center gap-8 mt-4">
+    <button id="plus-btn" class="btn btn-active border-0 hover:bg-violet-700 ... bg-green-500 shadow-lg shadow-green-500/50 ...">Plus</button>
+    <button id="minus-btn" class="btn btn-active border-0 hover:bg-blue-800 ... bg-red-500 shadow-lg shadow-red-500/50 ...">Minus</button>
+  </div>
+
+
+  <!-- tosbi -->
+
+ 
+
+
+
+
+<!-- textarea -->
+<div style="text-align: center;" class="mt-12 ">
+    <input id="text" type="text" placeholder="Enter your Comment " class="input input-bordered input-primary w-full max-w-xs shadow-lg shadow-indigo-500/50 ..." />
+    </div>
+    <!-- button -->
+    <div class="flex justify-center">
+        <button  class="btn btn-active  mt-8 text-white hover:bg-indigo-700 ... shadow-lg shadow-indigo-500/50 ... btn-info" id="todoButton" >Add</button>
+    </div>
+    <!-- h1 -->
+    <h1 id="h1" class="text-center mt-12 text-xl font-semibold text-neutral-50 "></h1>
+
+
+
+    
+  
+
+
+
+
+    <script src="btn.js"></script>
+    <script src="todo.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
